@@ -1,164 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Variants Mining</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/pen.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Variants mining</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#visual">Data visualization</a></li>
+<head>
+  <meta charset="utf-8">
 
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container d-flex h-100 align-items-center">
-                <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Variants Mining</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A digital analysis of Authorial corrections.<br> <i>Variants mining</i> of Alessandro Manzoni.</h2>
-                    <a class="btn btn-primary js-scroll-trigger" href="#about">Discover the project</a>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-white mb-4">About the project</h2>
-                        <p class="text-white-50">
-                         In the context of the affirmation of Digital Humanities as an independent field and the subsequent <b>application of computational methods to the analysis of literary texts</b>, the project deviates from the widespread approach based on the representation of Authorial variants rather than on the much less practiced study of them.
-<br><br>The research purpose is to start from a critical apparatus of a manuscript to create an automatic system of detection for pre-established categories of <b>Authorial corrections</b>. The work will thus focus on the case studies of <i>Promessi Sposi</i> by Alessandro Manzoni for prose and Giacomo Leopardi’s <i>Canti</i> for poetry.<br> <br>As a result, these newer techniques deepen the conventional philological reading, making it possible to gain <b>linguistic and empirical insight into the creative process of an Author</b> directly from the PDF version of the work. Such immediacy of the model will allow to widen the study to other Authors in order to make a complete analysis of the types of Authorial corrections and compare these different conceptions of writing statistically.
+  <title>Prova grafico</title>
+  <meta name="description" content="Variants mining">
+  <meta name="author" content="SitePoint">
 
-                        </p>
-                        
-                        <h2 class="text-white mb-4">How to read the graph:</h2> <br/>
-                        <p class="text-white-50">
-In the graph below, two main categories of correction are represented in order to identify a stratification of the editorial process: <b>“immediate variants” </b>(IC), corrections made at the time of writing, inline and overwritten implicated and <b>“late variants”</b> (LC) corrections made shortly or long after the first draft. Moreover, the taxonomy of the aforementioned classes takes into account corrections characterized by multiple interventions in phases. Finally, insertions (INS) indicate an addition of substantial innovation or a linguistic gap with regards to the former system. <br/>
+  <link rel="stylesheet" href="style.css">
 
-The numbers near the abbreviations define the level of complexity of each category, with 1 implying a single Authorial intervention and 2-8 the total number of sub-variants for the interventions in phases.
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/streamgraph.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/annotations.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
 
-</p>
 
-                    </div>
-                </div>
+</head>
 
-            </div>
-        </section>
-        <!-- data vis-->
-        <section class="about-section text-center" id="visual">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                    <div class="flourish-embed flourish-scatter" data-src="visualisation/3286263" data-url="https://flo.uri.sh/visualisation/3286263/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- Projects-->
-            <!-- Projects
-        <section class="projects-section bg-light" id="projects">
-            <div class="container">-->
-                <!-- Featured Project Row-->
-              <!--  <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/02ps.jpg" alt="" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-                        </div>
-                    </div>
-                </div>-->
-
-                <!-- Project One Row-->
-                <!--
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/02ps.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <!-- Project Two Row
-                <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/assets/img/02ps.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-        <!-- Signup-->
-
-        <!-- Contact-->
-        <section class="contact-section bg-black" id="signup">
-            <div class="container">
-
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://goo.gl/maps/UNJ5VTyyhcF1WsuT8"><i class="fas fa-map-marker-alt"></i></a>
-                    <a class="mx-2" href="mailto:annasofia.lippolis@studio.unibo.it"><i class="far fa-envelope"></i></a>
-                    <a class="mx-2" href="https://github.com/dersuchendee/variantsmining"><i class="fab fa-github"></i></a>
-
-
-                </div>
-
-            </div>
-
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Anna Sofia Lippolis, Gabriella Totaro, 2020</div>
-          <div>
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0; display:block; margin-left:auto; margin-right:auto; margin-top:10px; " src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
-          </div></footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+<body>
+  <figure class="highcharts-figure">
+    <div id="container"></div>
+    <p class="highcharts-description">
+      Streamgraphs are a type of stacked area charts where the
+      areas are displaced around a central axis. It is often
+      used for displaying compound volume across different
+      categories or over time.
+    </p>
+  </figure>
+<script src="myscript.js"></script>
+</body>
 </html>
